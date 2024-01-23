@@ -1,0 +1,66 @@
+Git  -
+It is a version control system.
+Cloneable - We can push our data to Website and save it.
+
+Properties of Git -
+
+
+
+*) We can create branch .
+Branch - By creating branch we can distribute out code with our team
+sub branch 1 = additiong program
+sub branch 2 = Multiplication program
+
+*)We can merge  branch too.
+branch = sub branch 1 + sub branch 2
+
+*) it is offline.
+*) It saves your time.
+*) can track your file changes.
+
+
+Command of git-
+
+Branch - Copy of the main file(java).
+Checkout - 
+Clone
+
+
+Git Rm - For removing the file.
+
+$ git init
+Initialized the file and creates folder(.git).
+$ ls
+//checks the file.
+
+log- it will track commit
+$git log
+
+add command...
+$git add mul.java(file name).
+
+to add all files of the folder use git add -A
+
+$git add -A
+
+Change file(mul.java) and then write git checkout
+
+
+//after commit one time if you change anything in file 
+you can undo that change by using checkout
+$git checkout file name
+Output - It will undo all changes.
+
+
+
+
+Check git version...
+$git --version 
+
+Link your email and name with git...
+
+$ git config --global user.name "Naman"
+$ git config --global user.email "coderp57@gmail.com"
+
+know your name and Gmail has been linked...
+$ git config --list
