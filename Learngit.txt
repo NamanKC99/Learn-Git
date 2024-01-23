@@ -26,8 +26,8 @@ Checkout -
 Clone
 
 
-Git Rm - For removing the file.
-
+git rm file_name // For removing the file.
+git rm -f file_name //for removing file Forcefully
 $ git init
 Initialized the file and creates folder(.git).
 $ ls
