@@ -64,3 +64,96 @@ $ git config --global user.email "coderp57@gmail.com"
 
 know your name and Gmail has been linked...
 $ git config --list
+
+
+
+
+
+-------Command to Command for pushing our file in Git------
+
+
+
+
+hp@DESKTOP-Q2PH6MN MINGW64 ~/Desktop/Gitjava/pro (master)
+$ git commit -m "file created"
+[master (root-commit) 7b1d061] file created
+ 1 file changed, 66 insertions(+)
+ create mode 100644 Learngit.txt
+
+hp@DESKTOP-Q2PH6MN MINGW64 ~/Desktop/Gitjava/pro (master)
+$ git checkout Learngit.txt
+Updated 1 path from the index
+
+hp@DESKTOP-Q2PH6MN MINGW64 ~/Desktop/Gitjava/pro (master)
+$ git commit -m "done"
+On branch master
+nothing to commit, working tree clean
+
+hp@DESKTOP-Q2PH6MN MINGW64 ~/Desktop/Gitjava/pro (master)
+$ git rmove -v
+git: 'rmove' is not a git command. See 'git --help'.
+
+The most similar command is
+        remote
+
+hp@DESKTOP-Q2PH6MN MINGW64 ~/Desktop/Gitjava/pro (master)
+$ git remove -v
+git: 'remove' is not a git command. See 'git --help'.
+
+The most similar command is
+        remote
+
+hp@DESKTOP-Q2PH6MN MINGW64 ~/Desktop/Gitjava/pro (master)
+$ git remote -v
+
+//      -----add the origin ---
+hp@DESKTOP-Q2PH6MN MINGW64 ~/Desktop/Gitjava/pro (master)
+$ git remote add origin https://github.com/NamanKC99/Learn-Git.git
+
+//------Now remove - v command will work----
+hp@DESKTOP-Q2PH6MN MINGW64 ~/Desktop/Gitjava/pro (master)
+$ git remote -v
+origin  https://github.com/NamanKC99/Learn-Git.git (fetch)
+origin  https://github.com/NamanKC99/Learn-Git.git (push)
+
+hp@DESKTOP-Q2PH6MN MINGW64 ~/Desktop/Gitjava/pro (master)
+$ git branch -M master
+
+hp@DESKTOP-Q2PH6MN MINGW64 ~/Desktop/Gitjava/pro (master)
+$ git push -u origin master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 816 bytes | 272.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/NamanKC99/Learn-Git.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
+
+
+//After the changes for  the file you can 
+// Easily repush the changes in Github
+hp@DESKTOP-Q2PH6MN MINGW64 ~/Desktop/Gitjava/pro (master)
+$ git add Learngit.txt
+
+hp@DESKTOP-Q2PH6MN MINGW64 ~/Desktop/Gitjava/pro (master)
+$ git commit -m "done the change "
+[master a0b9227] done the change
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+hp@DESKTOP-Q2PH6MN MINGW64 ~/Desktop/Gitjava/pro (master)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 329 bytes | 109.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/NamanKC99/Learn-Git.git
+   7b1d061..a0b9227  master -> master
+
+hp@DESKTOP-Q2PH6MN MINGW64 ~/Desktop/Gitjava/pro (master)
+$
