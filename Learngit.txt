@@ -7,7 +7,7 @@ Properties of Git -
 
 
 *) We can create branch .
-Branch - By creating branch we can distribute out code with our team
+Branch - By creating branch we can distribute outr code with our team
 sub branch 1 = additiong program
 sub branch 2 = Multiplication program
 
@@ -16,22 +16,117 @@ branch = sub branch 1 + sub branch 2
 
 *) it is offline.
 *) It saves your time.
-*) can track your file changes.
+*) can track your file or code changes.
+
+-----------------CheatSheet of_Git_COMMAND_---------
+git init
+git add file_name
+git commit -m "meseage for commit"
+git checkout file_name
+//You can go past file through checkout
+git checkout <commit hashcode >
+
+branch related command--
+git branch//return branch name
+git branch -m <new_branchname> //can change a branch name
+git branch <branch_name> //can create a new branch
+git checkout <branch_name>//can change branch
+//create branch name and go to branch
+git checkout -b <branch_name>
 
 
-Command of git-
+
+`````Some file realted command ```````
+
+***********************Git push***************
+Def - used to upload local repository content to a 
+      remote repository. 
+
+``````````Many command to push file`````````
+
+$git push <option>
+
+//push branch forcefully
+$git <remote> <branch> -force
+
+//git push -v will give description output.
+$git push -v
+
+//we can delete a remove branch using push origin -delet edited
+$git push origin -delet edited
+
+			*End*
+*********************************************
+
+*************Git fetch******** 
+//git fetch command download content(object,commits,refs) from required remote repositary.
+//git fetch download content from another directory.
+
+git fetch<option>
+//to fetch repo by it's Url
+$git fetch<repository Url>
+//to fetch specific branch
+$git fetch <branch_Url> <branch_name>
+//To fetch all branch
+$git fetch -all
+
+//add update of remote repo to local repo
+$git fetch origin
+
+
+			*End*
+********************************************
+Git merge
+
+//combines multiple sequence of commits into a single branch.
+
+*****************Git pull*****************
+Git pull 
+//Git pull is a combination of git fetch and get merge
+//first git fetch take a reposatry and then git merge merges the 
+//repostary to main branch.
+
+Git pull Defination-
+//If in Github account directory changes then it update the directory in branch.
+//to update the branch .bcz gihub repo has updated.
+
+
+	```many command to pull file changes````
+$git pull 
+
+//option will define to many other operation
+$git pull<option>
+
+$git pull <remote branch url>
+
+//git pull origin master
+//origin stand for repository location.
+//Master considered as a main branch.
+$git pull orgin master
+
+
+//Check remote  repository location 
+$git remote -v
+
+
+
+
+-----------Command of git----------
 
 Branch - Copy of the main file(java).
 Checkout - 
 Clone
 
+//------By (git init) this command you can start creating branch-----
+$ git init
+Initialized the file and creates folder(.git).
+
 
 git rm file_name // For removing the file.
 git rm -f file_name //for removing file Forcefully
-$ git init
-Initialized the file and creates folder(.git).
+
 $ ls
-//checks the file.
+//list all the file.
 
 log- it will track commit
 $git log
@@ -80,37 +175,19 @@ $ git commit -m "file created"
  1 file changed, 66 insertions(+)
  create mode 100644 Learngit.txt
 
-hp@DESKTOP-Q2PH6MN MINGW64 ~/Desktop/Gitjava/pro (master)
-$ git checkout Learngit.txt
-Updated 1 path from the index
 
-hp@DESKTOP-Q2PH6MN MINGW64 ~/Desktop/Gitjava/pro (master)
-$ git commit -m "done"
-On branch master
-nothing to commit, working tree clean
-
-hp@DESKTOP-Q2PH6MN MINGW64 ~/Desktop/Gitjava/pro (master)
-$ git rmove -v
-git: 'rmove' is not a git command. See 'git --help'.
-
-The most similar command is
-        remote
-
-hp@DESKTOP-Q2PH6MN MINGW64 ~/Desktop/Gitjava/pro (master)
-$ git remove -v
-git: 'remove' is not a git command. See 'git --help'.
-
-The most similar command is
-        remote
 
 hp@DESKTOP-Q2PH6MN MINGW64 ~/Desktop/Gitjava/pro (master)
 $ git remote -v
 
 //      -----add the origin ---
+
+
 hp@DESKTOP-Q2PH6MN MINGW64 ~/Desktop/Gitjava/pro (master)
 $ git remote add origin https://github.com/NamanKC99/Learn-Git.git
 
-//------Now remove - v command will work----
+//------Now remote - v command will work----
+
 hp@DESKTOP-Q2PH6MN MINGW64 ~/Desktop/Gitjava/pro (master)
 $ git remote -v
 origin  https://github.com/NamanKC99/Learn-Git.git (fetch)
@@ -133,15 +210,20 @@ branch 'master' set up to track 'origin/master'.
 
 
 
-//After the changes for  the file you can 
-// Easily repush the changes in Github
+//After doing change for  the file you can 
+// Easily repush the changed file in Github
 hp@DESKTOP-Q2PH6MN MINGW64 ~/Desktop/Gitjava/pro (master)
 $ git add Learngit.txt
 
+// After change code in file commit must do
 hp@DESKTOP-Q2PH6MN MINGW64 ~/Desktop/Gitjava/pro (master)
 $ git commit -m "done the change "
+
+
 [master a0b9227] done the change
  1 file changed, 2 insertions(+), 2 deletions(-)
+
+//this time our branch is save so we can directoly use push
 
 hp@DESKTOP-Q2PH6MN MINGW64 ~/Desktop/Gitjava/pro (master)
 $ git push
@@ -155,5 +237,6 @@ remote: Resolving deltas: 100% (1/1), completed with 1 local object.
 To https://github.com/NamanKC99/Learn-Git.git
    7b1d061..a0b9227  master -> master
 
-hp@DESKTOP-Q2PH6MN MINGW64 ~/Desktop/Gitjava/pro (master)
-$
+
+
+// ----------file has uploaded to GitHub
