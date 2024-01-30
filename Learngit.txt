@@ -110,6 +110,9 @@ $git remote -v
 
 
 
+************************Removing Command*****************
+//remove origin
+git remote remove origin
 
 -----------Command of git----------
 
@@ -193,9 +196,12 @@ $ git remote -v
 origin  https://github.com/NamanKC99/Learn-Git.git (fetch)
 origin  https://github.com/NamanKC99/Learn-Git.git (push)
 
+
+
 hp@DESKTOP-Q2PH6MN MINGW64 ~/Desktop/Gitjava/pro (master)
 $ git branch -M master
 
+//Uploading folder(directory) to Github Account 
 hp@DESKTOP-Q2PH6MN MINGW64 ~/Desktop/Gitjava/pro (master)
 $ git push -u origin master
 Enumerating objects: 3, done.
