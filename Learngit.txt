@@ -114,6 +114,16 @@ $git remote -v
 //remove origin
 git remote remove origin
 
+//remove branch
+git branch -d branch_name
+git branch --delet branch_name
+
+
+//remove file
+git rm file_name
+//remove file forcefully
+git rm -f file_name
+
 -----------Command of git----------
 
 Branch - Copy of the main file(java).
